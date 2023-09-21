@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-theme="changeable">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+    <title>Personal Website</title>
+    <script>
+      window.addEventListener("message", function (event) {
+        if (event.data.theme === "dark") {
+          document.getElementById("theme-link").href = "style.css";
+        } else {
+          document.getElementById("theme-link").href = "light.css";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-scrollable">
+        <div class="pdf-container">
+          <embed
+            src="Agarwal_Vasudev_Resume.pdf"
+            type="application/pdf"
+            width="100%"
+            height="800px"
+          />
+        </div>
+      </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <ul style="list-style: none">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quali.html">Qualification</a></li>
+          <li><a href="tech.html">Technical</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="ai.html">AI-generated</a></li>
+        </ul>
+
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <script src="function.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </body>
+</html>

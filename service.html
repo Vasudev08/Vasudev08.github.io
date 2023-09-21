@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html data-theme="changeable">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-link" rel="stylesheet" href="style.css" />
+
+    <title>Personal Website</title>
+
+    <script>
+      window.addEventListener("message", function (event) {
+        if (event.data.theme === "dark") {
+          document.getElementById("theme-link").href = "style.css";
+        } else {
+          document.getElementById("theme-link").href = "light.css";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-scrollable">
+        <h1>Service Page</h1>
+
+        <div class="project">
+          <div class="project-title">Develop for Good</div>
+          <div class="project-description">
+            Develop for Good powers social good through students from all
+            colleges and backgrounds. The Bay Area nonprofit especially
+            prioritizes making its valuable, hands-on project experiences
+            accessible to underrepresented students in tech to accelerate their
+            careers. It strives to empower the next generation of diverse tech
+            leaders to learn by doing good, all while furthering the digital
+            transformation of the nonprofit sector. Applied to be a volunteer
+            where we will help develop project start Oct 29th, 2023.
+
+            <div class="project-photos">
+              <a href="https://www.developforgood.org/" target="_blank">
+                <img src="develop_for_good.png" alt="Develop for Good" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">The Big Event @ TAMU</div>
+          <div class="project-description">
+            Big Event is an annual, student-led communicty service event. It is
+            one of the largest one-day, student-run service project in United
+            States. Will be participating in Spring 2025
+
+            <div class="project-photos">
+              <a href="https://bigevent.tamu.edu/" target="_blank">
+                <img src="big_event.png" alt="Big Event" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Engineers without borders @ TAMU</div>
+          <div class="project-description">
+            Engineers Without Borders embodies the idea of engineering for
+            social good, applying technical skills to address global challenges
+            and make a positive impact on the lives of people in less-developed
+            regions. Paricipated in weekly meeting with my friend during first
+            semseter.
+
+            <div class="project-photos">
+              <a href="https://www.ewb-usa.org/" target="_blank">
+                <img
+                  src="engineer_without_borders.png"
+                  alt="Engineering without borders"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu" text-align: center;>
+        <h2>Menu</h2>
+        <ul style="list-style: none">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quali.html">Qualification</a></li>
+          <li><a href="tech.html">Technical</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="ai.html">AI-generated</a></li>
+        </ul>
+
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <script src="function.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full-screen height */
+}
+
+.container {
+  display: flex;
+  flex: 1; /* Allow the container to grow and fill the available vertical space */
+}
+
+.left-scrollable {
+  flex: 2;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-scrollable img {
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.menu {
+  flex: 0.5;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #ff5733;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li:hover {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Add a subtle text shadow on hover */
+}
+
+.menu a {
+  color: #00a6e2;
+  text-decoration: none;
+}
+
+.hiking-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hiking-photos img:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.hiking-photos img:not(:hover) {
+  transform: scale(1);
+}
+
+.hiking-photos img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.book-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.book-photos img:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.book-photos img:not(:hover) {
+  transform: scale(1);
+}
+
+.book-photos img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.personal-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.personal-photos img:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.personal-photos img:not(:hover) {
+  transform: scale(1.4);
+}
+
+.personal-photos img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.project {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 14px;
+}
+
+.project-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.project-photos img:hover {
+  transform: scale(2);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.project-photos img:not(:hover) {
+  transform: scale(1);
+}
+
+.project-photos img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.review-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-text {
+  font-size: 14px;
+}
+
+.book-image {
+  max-width: 300px;
+  margin-top: 20px;
+}
