@@ -23,7 +23,7 @@ latest_posts:
   .rm-main { display: flex; flex-direction: column; gap: 1.25rem; min-width: 0; }
   .rm-intro { margin: 0; }
   .rm-venn { width: 100%; max-width: 400px; }
-  .rm-photo { width: 170px; justify-self: end; }
+  .rm-photo { width: 250px; justify-self: end; }
   .rm-photo img { width: 100%; display: block; }
   .rm-links { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.75rem; font-size: 0.9rem; }
   @media (max-width: 767px) {
